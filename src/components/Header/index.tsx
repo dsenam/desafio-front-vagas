@@ -1,20 +1,23 @@
+import React from 'react';
+import "./styles.css";
+import Typography from "../Typography";
 
-
-import './styles.css';
-import Typography from '../Typography';
-
-const Header = () => {
+const Header = React.memo(() => {
   return (
     <header className="header">
-    <Typography variant='h1' className="header__title">
-      Formulário
-      <br />
-      para compra de
-      <br />
-      <span className='header__title--highlight'>Pacote de Stickers</span>
-    </Typography>
-  </header>
+      <Typography
+        title="Formulário para compra de"
+        variant="h1"
+        className="header__title"
+      />
+
+      <Typography
+        title="Pacote de Stickers"
+        variant="p"
+        className="header__highlight"
+      />
+    </header>
   );
-}
+});
 
 export default Header;

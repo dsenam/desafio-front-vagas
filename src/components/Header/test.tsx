@@ -19,8 +19,8 @@ it('should render the correct text inside the Typography component', () => {
     expect(typographyElement).toBeInTheDocument();
   });
 
-  it('should render a span element with class \'header__title--highlight\' inside the Typography component', () => {
+  it('should render a span element with class \'header__highlight\' inside the Typography component', () => {
     render(<Header />);
     const spanElement = screen.getByText('Pacote de Stickers');
-    expect(spanElement).toHaveClass('header__title--highlight');
+    expect(spanElement).toHaveClass('header__highlight');
   });
