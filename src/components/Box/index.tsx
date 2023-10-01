@@ -1,12 +1,12 @@
-import { ReactNode } from "react";
+import React, {ReactNode} from 'react';
 import "./styles.css";
 
 interface IBoxProps {
   children: ReactNode;
 }
 
-const Box = ({ children }: IBoxProps) => {
-  return <div className="box">{children}</div>;
-};
+const Box = React.memo(({ children }: IBoxProps) => {
+  return <div data-testid='box' className="box">{children}</div>;
+});
 
 export default Box;
