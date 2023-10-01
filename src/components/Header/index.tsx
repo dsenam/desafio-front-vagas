@@ -1,9 +1,9 @@
-import React from 'react';
+
 
 import './styles.css';
 import Typography from '../Typography';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
     <header className="header">
     <Typography variant='h1' className="header__title">
