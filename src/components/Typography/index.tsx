@@ -1,6 +1,6 @@
 import React, { JSX } from 'react';
 
-type Variants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p';
+type Variants = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'label';
 
 interface BaseTypographyProps {
   variant: Variants;
@@ -22,6 +22,7 @@ const componentsMap: Record<Variants, Variants> = {
   h5: 'h5',
   h6: 'h6',
   p: 'p',
+  label: 'label'
 };
 
 const Typography = <T extends Variants>({ variant, title, className, ...rest }: TypographyProps<T>) => {

@@ -6,10 +6,7 @@
   margin-bottom: 32px;
 }
 
-.label {
-  font-size: 18px;
-  font-weight: 600;
-}
+
 
 
 .form textarea {
@@ -24,9 +21,6 @@
   font-size: 14px;
 }
 
-.fieldset {
-  padding: 0 32px;
-}
 
 .counter svg {
   fill: #2f3676;

@@ -1,0 +1,13 @@
+
+.main {}
+
+.main .main__label {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+.main .main__fieldset {
+    display: flex;
+    
+    padding: 0 32px;
+}

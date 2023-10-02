@@ -2,15 +2,24 @@
 
 import "./App.css";
 import Box from "./components/Box";
+import Form from "./components/Form";
 import Header from "./components/Header";
 
 function App() {
   return (
     <>
       <Box>
-       <Header/>
-        <div className="space"></div>
-        <div className="form">
+        <Header />
+        <Form />
+      </Box>
+    </>
+  );
+}
+
+export default App;
+
+{
+  /* <div className="form">
           <div className="space"></div>
           <div className="fieldset">
             <div className="label">Quais stickers:</div>
@@ -53,10 +62,5 @@ function App() {
           <div className="footer">
             <button>Enviar</button>
           </div>
-        </div>
-      </Box>
-    </>
-  );
+        </div> */
 }
-
-export default App;
